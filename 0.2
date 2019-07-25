@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <string.h>
+
+char Resposta(char resp){
+
+    switch(resp)
+  {
+    case('Y'):
+    case('y'):
+    case('S'):
+    case('s'):
+    return 1;
+    break;
+
+    default:
+    return 0;
+    }
+}
+
+int main(){
+
+    char Nome[15];
+    char resp;
+
+    printf("  A LENDA\n\n");
+    printf("\n 1 - Sinais\n\n");
+
+
+    while(1){
+
+        printf("Qual o seu nome?\n");
+        fflush(stdin);
+        scanf("%s", &Nome);
+
+        printf("\n%s eh o seu nome mesmo, garoto?('s' para confirmar e 'n' para negar.)\n", Nome);
+        fflush(stdin);
+        scanf("%c", &resp);
+
+        if(Resposta(resp)){
+            printf("\nSeu nome eh %s.\n", Nome);
+            break;
+        }
+    }
+return 0;
+}
