@@ -48,7 +48,7 @@ int main(){
     char NomePrevio[10], Nome[10];
     char resp;
     int respInt, ansiedade, hp, hpDalia, hpHanne, hpSetvik, hpYurin, i;
-
+    void delay(unsigned int);
     printf("  A LENDA\n\n");
     printf("\n 1 - Sinais\n\n");
 
@@ -64,8 +64,7 @@ int main(){
         scanf("%c", &resp);
 
         system("cls");
-        for(i=0;i<=900000000;i++){
-
+        for(i=0;i<=1500000000;i++){
         }
         if(RespostaLetra(resp)){
             printf("\n\t\t\t\tThe Legend Of %s\n", Nome);
@@ -73,11 +72,9 @@ int main(){
         }
     }
         for(i=0;i<=1500000000;i++){
-
         }
         system("cls");
         for(i=0;i<=1500000000;i++){
-
         }
         printf("O ceu estava cinzento em Hyalton, e Dalia caminhava ao seu lado, segurando os livros que se assemelhavam a tijolos.\n"
                 "Voce sente que ela esta cansada mas ainda assim, expressa uma feicao de leveza. Os"
@@ -122,4 +119,3 @@ int main(){
 
 return 0;
 }
-
