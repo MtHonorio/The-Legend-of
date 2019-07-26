@@ -1,0 +1,110 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+char Resposta(char resp){
+
+    if(resp=='s'||resp=='p'||resp=='S'||resp=='y'){
+        return 1;
+    }
+    if(resp=='n'||resp=='N'){
+        return 0;
+    }
+}
+int quadResposta(int resp){
+
+    switch(resp){
+        case 1:
+            return 1;
+            break;
+        case 2:
+            return 2;
+            break;
+        case 3:
+            return 3;
+            break;
+        case 4:
+            return 4;
+            break;
+        default:
+            return 0;
+    }
+
+}
+
+int main(){
+
+    char NomePrevio[10], Nome[10];
+    char resp;
+    int respInt, ansiedade, hp, hpDalia, hpHanne, hpSetvik, hpYurin, i;
+
+    printf("  A LENDA\n\n");
+    printf("\n 1 - Sinais\n\n");
+
+
+    while(1){
+
+        printf("\nQual o seu nome, rapaz?\n");
+        fflush(stdin);
+        scanf("%s", &Nome);
+
+        printf("\n%s eh mesmo o teu nome, garoto?\n");
+        fflush(stdin);
+        scanf("%c", &resp);
+
+        system("cls");
+        for(i=0;i<=900000000;i++){
+
+        }
+        if(Resposta(resp)){
+            printf("\n\t\t\t\tThe Legend Of %s\n", Nome);
+            break;
+        }
+    }
+        for(i=0;i<=1500000000;i++){
+
+        }
+        system("cls");
+        for(i=0;i<=1500000000;i++){
+
+        }
+        printf("O ceu estava cinzento em Hyalton, e Dalia caminhava ao seu lado, segurando os livros que se assemelhavam a tijolos.\n"
+                "Voce sente que ela esta cansada mas ainda assim, expressa uma feicao de leveza. Os"
+                " dois estavam a caminho de casa, passando pela enorme estrutura do Casarao dos Valkron.\n"
+                "O lugar mais parecia uma velha ruina, mas era isso que a tornava tao resitente pelas eras."
+                "Naquele momento, ela te lanca um olhar e pergunta:\n"
+                "-E entao, ja esta ansioso para o festival?\n");
+        printf("1 - Claro.\n0 - Nem tanto.\n");
+        fflush(stdin);
+        scanf("%d", &respInt);
+
+        if(Resposta(resp)){
+            printf("\nDalia:\n -Sim, mas o que vai querer ver primeiro?\n");
+            printf("1-Campeonato de Cavalaria\n 2-Campeonato de Arquearia\n 3 - Duelo de Espadachins\n 4 - A Comunhao\n");
+            fflush(stdin);
+            scanf("%d", &respInt);
+                switch(respInt){
+                    case 1:
+                    printf("\n Dalia:\n- Os duelos sao bem mais emocionantes... Eu queria ter uma espada, nao um cavalo.");
+                    ansiedade=1;
+                    break;
+                    case 2:
+                    printf("\n Dalia:\n- Com a tua mira? - Ela comecou a rir. - Mas eu queria uma espada, nao um arco, acho que\n");
+                    printf("eu me daria bem com uma espada.\n");
+                    ansiedade=2;
+                    break;
+                    case 3:
+                    printf("\n Dalia:\n- Ai sim, a Lady Guida vai fatiar o Mestre Odwin esse ano.\n");
+                    ansiedade=3;
+                    case 4:
+                    printf("\n Dalia:\n- Ah, e a segunda coisa que estou mais ansiosa. Soube que os Ulvin vao preparar um bolo para todos, esse ano,\nnao so pros Valkron.\n");
+                    ansiedade=4;
+            }
+        }else{
+
+            printf("\n Dalia:\n - Ah, mas eu estou. Voce nao tem ideia do que eh esperar um ano para ver Lady Guida e o Mestre Odwin duelando.\n");
+            ansiedade=0;
+        }
+
+return 0;
+}
