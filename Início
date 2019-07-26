@@ -2,7 +2,7 @@
 #include <string.h>
 #include <ctype.h>
 
-char Resposta(char resp){
+char RespostaLetra(char resp){
 
     if(resp=='s'||resp=='p'||resp=='S'||resp=='y'){
         return 1;
@@ -11,6 +11,17 @@ char Resposta(char resp){
         return 0;
     }
 }
+int RespostaNumero(int resp){
+
+    if(resp==1){
+        return 1;
+    }
+    if(resp==0){
+        return 0;
+    }
+  }
+
+
 int quadResposta(int resp){
 
     switch(resp){
@@ -56,7 +67,7 @@ int main(){
         for(i=0;i<=900000000;i++){
 
         }
-        if(Resposta(resp)){
+        if(RespostaLetrab(resp)){
             printf("\n\t\t\t\tThe Legend Of %s\n", Nome);
             break;
         }
@@ -72,15 +83,15 @@ int main(){
                 "Voce sente que ela esta cansada mas ainda assim, expressa uma feicao de leveza. Os"
                 " dois estavam a caminho de casa, passando pela enorme estrutura do Casarao dos Valkron.\n"
                 "O lugar mais parecia uma velha ruina, mas era isso que a tornava tao resitente pelas eras."
-                "Naquele momento, ela te lanca um olhar e pergunta:\n"
-                "-E entao, ja esta ansioso para o festival?\n");
+                "Naquele momento, sua irma te lanca um olhar e pergunta:\n"
+                "-E entao, ja esta ansioso para o festival?\n\n");
         printf("1 - Claro.\n0 - Nem tanto.\n");
         fflush(stdin);
         scanf("%d", &respInt);
-
-        if(Resposta(resp)){
-            printf("\nDalia:\n -Sim, mas o que vai querer ver primeiro?\n");
-            printf("1-Campeonato de Cavalaria\n 2-Campeonato de Arquearia\n 3 - Duelo de Espadachins\n 4 - A Comunhao\n");
+        system("cls");
+        if(RespostaNumero(respInt)==1){
+            printf("\nDalia:\n -Sim, mas o que vai querer ver primeiro?\n\n");
+            printf("1 - Campeonato de Cavalaria\n2 - Campeonato de Arquearia\n3 - Duelo de Espadachins\n4 - A Comunhao\n");
             fflush(stdin);
             scanf("%d", &respInt);
                 switch(respInt){
@@ -96,9 +107,11 @@ int main(){
                     case 3:
                     printf("\n Dalia:\n- Ai sim, a Lady Guida vai fatiar o Mestre Odwin esse ano.\n");
                     ansiedade=3;
+                    break;
                     case 4:
-                    printf("\n Dalia:\n- Ah, e a segunda coisa que estou mais ansiosa. Soube que os Ulvin vao preparar um bolo para todos, esse ano,\nnao so pros Valkron.\n");
+                    printf("\n Dalia:\n- Ah, e a segunda coisa que estou mais ansiosa. Soube que os Ulvin vao preparar um bolo para todos, esse ano,nao so pros Valkron.\n");
                     ansiedade=4;
+                    break;
             }
         }else{
 
