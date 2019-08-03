@@ -1,0 +1,247 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <time.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+
+#define s 9//99999 //FUNÇÃO UNSLEEP (Tira as barras para voltar ao normal)
+
+int AttackSystem (int x){
+
+    switch(x){
+        case 1:
+            return 1;
+            break;
+        case 2:
+            return 2;
+            break;
+
+        case 3:
+            return 3;
+            break;
+        case 4:
+            return 4;
+            break;
+        default:
+            return 0;
+            break;
+    }
+}
+
+char RespostaLetra(char resp){
+
+    switch(resp){
+    case('Y'):
+    case('y'):
+    case('S'):
+    case('s'):
+    return 1;
+    break;
+
+    default:
+    return 0;
+    }
+}
+int RespostaNumero(int resp){
+
+    if(resp==1){
+        return 1;
+    }
+    if(resp==2){
+        return 0;
+    }
+  }
+
+
+int quadResposta(int resp){
+
+    switch(resp){
+        case 1:
+            return 1;
+            break;
+        case 2:
+            return 2;
+            break;
+        case 3:
+            return 3;
+            break;
+        case 4:
+            return 4;
+            break;
+        default:
+            return 0;
+    }
+
+}
+
+int main(){
+
+    char NomePrevio[10], Nome[10];
+    char resp;
+    char aspas = '"';
+    int respInt, ansiedade, hp, hpDalia, hpHanne, hpSetvik, hpYurin, i;
+    int  indiferenca = 0; int paiProtetor=0;
+    void delay(unsigned int);
+    printf("  A LENDA\n\n");
+    printf("\n 1 - Sinais\n\n");
+
+
+    while(1){
+
+        //CHECAR O NOME-----------------------------------------------------------------------------------------------------------------
+        printf("\n Qual o seu nome?\n  ");
+        fflush(stdin);
+        scanf("%s", &Nome);
+
+        printf("\n %s eh mesmo o teu nome?\n  ");
+        fflush(stdin);
+        scanf("%c", &resp);
+
+        system("cls");
+        usleep(s); usleep(s); usleep(s);
+        if(RespostaLetra(resp)){
+            printf("\n\t\t\t\tThe Legend Of %s\n", Nome);
+            break;
+        }
+    }
+        usleep(s); usleep(s); usleep(s);
+        system("cls");
+        usleep(s); usleep(s); usleep(s);
+
+        //COMEÇO DO JOGO--------------------------------------------------------------------------------------------------------------
+
+        printf("  O ceu estava cinzento em Hyalton, e Dalia caminhava ao seu lado, segurando os\n livros que se assemelhavam a tijolos.\n"); usleep(s); usleep(s); usleep(s); usleep(s);
+        printf(" Voce sente que ela esta cansada, mas ainda assim expressa uma feicao de leveza."); usleep(s); usleep(s); usleep(s); usleep(s);
+        printf( " Os dois estavam a caminho de casa, passando pela enorme estrutura do Casarao\n dos Valkron.\n"); usleep(s); usleep(s); usleep(s);
+        printf( "\n Naquele momento, sua irma te lanca um olhar e pergunta: \n"); usleep(s); usleep(s); usleep(s); usleep(s);
+        printf(" -E entao, ja esta ansioso para o festival? \n\n"); usleep(s); usleep(s); usleep(s);
+
+        printf(" 1 - Claro.\n 2 - Nem tanto.\n ? - ...\n  ");
+        fflush(stdin);
+        scanf("%d", &respInt);
+        system("cls");
+        usleep(s); usleep(s);
+        if(RespostaNumero(respInt)==1){
+            printf("\n Dalia:\n -Sim, mas o que vai querer ver primeiro?\n\n"); usleep(s); usleep(s);
+            printf(" 1 - Campeonato de Cavalaria\n 2 - Campeonato de Arquearia\n 3 - Duelo de Espadachins\n 4 - A Comunhao\n ? - ...\n ");
+            fflush(stdin);
+            scanf("%d", &respInt);
+            system("cls"); usleep(s);
+
+                switch(respInt){
+                    case 1:
+                    usleep(s); usleep(s);
+                    printf("\n Dalia:\n- Os duelos sao bem mais emocionantes...\n Eu queria ter uma espada, nao um cavalo.\n"); usleep(s); usleep(s);
+                    printf("\n (Dalia vai lembrar de sua escolha no dia...)\n");
+                    ansiedade=1;
+                    break;
+                    case 2:
+                    printf("\n Dalia:\n- Com a tua mira? - Ela comecou a rir. - Mas eu queria uma\n espada, nao um arco, acho que eu me daria bem com uma espada.\n"); usleep(s); usleep(s);
+                    printf("\n (Dalia vai lembrar de sua escolha no dia...)\n");
+                    ansiedade=2;
+                    break;
+                    case 3:
+                    printf("\n Dalia:\n - A Lady Guida vai fatiar o Mestre Odwin esse ano.\n"); usleep(s); usleep(s);
+                    printf("\n (Dalia vai lembrar de sua escolha no dia...)\n");
+                    ansiedade=3;
+                    break;
+                    case 4:
+                    printf("\n Dalia:\n- Ah, e a segunda coisa que estou mais ansiosa. Soube que os Ulvin\n vao preparar um bolo para todos esse ano, nao so pros Valkron.\n"); usleep(s); usleep(s);
+                    printf("\n (Dalia vai lembrar de sua escolha no dia...)\n");
+                    ansiedade=4;
+                    break;
+                    default:
+                    printf("Voce nao parece estar prestando muita atencao entao esquece...\n"); usleep(s); usleep(s);
+                    printf("\n (Dalia vai lembrar disso...)\n");
+                    indiferenca = indiferenca++;
+            }
+        }else{
+
+            if(RespostaNumero(respInt)==0){
+             usleep(s); usleep(s);
+            printf("\n Dalia:\n - Ah, mas eu estou. Voce nao tem ideia do que eh esperar um ano para ver\nLady Guida e o Mestre Odwin duelando.\n"); usleep(s); usleep(s);
+            printf("\n (Dalia vai lembrar disso...)\n");
+            ansiedade=0;}
+            else{
+            usleep(s); usleep(s);
+            printf("\n Dalia:\n - Nao quer falar comigo, entendi...\n"); usleep(s); usleep(s);
+            printf("\n (Dalia vai lembrar disso...)\n");
+            indiferenca = indiferenca++;}
+        }
+
+              puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");
+              usleep(s); usleep(s); system("cls"); usleep(s);
+
+        //AO CHEGAR EM CASA-------------------------------------------------------------------------------------
+        usleep(s); usleep(s); usleep(s); usleep(s);
+        printf("\n Chegando em casa, voce se depara com Hanne, sua mae, que esta cuidando de uma\n "); usleep(s); usleep(s);
+        printf("pequena plantacao ao lado de sua casa.\n"); usleep(s); usleep(s);
+        printf("\n Hanne:\n - Dalia, venha me ajudar!\n"); usleep(s); usleep(s);
+        printf("\n E entao voce ouve um grito...\n ");usleep(s);
+        printf(" %c%s, venha aqui!%c\n", aspas, Nome, aspas);usleep(s);
+        printf("\n Era Setvik, seu pai.\n");
+        printf(" 1 - Ir ate ele\n 2 - Ignorar\n ? - ...\n  ");
+
+        fflush(stdin);
+        scanf("%d", &respInt);
+        system("cls");
+        usleep(s); usleep(s);
+
+        switch(respInt){
+                    case 2:
+                    default:
+                        usleep(s); usleep(s);
+                        printf("\n Setvik:\n - VENHA AQUI AGORA. NAO ESTA ME OUVINDO?"); usleep(s); usleep(s);
+                        printf("\n O grito foi tao alto que Hanne e Dalia se espantaram.\n\n");usleep(s); usleep(s);
+                        printf(" 1 - Ir ate ele\n 2 - Ir ate ele\n ? - Ir ate ele\n  ");
+                        fflush(stdin);
+                        scanf("%*d");
+                        system("cls");
+                        usleep(s); usleep(s);
+                        printf(" Setvik:\n -Filho, voce pode fazer um favor?\n");
+
+
+
+                    break;
+                    case 1:
+                        usleep(s); usleep(s);
+                        system("cls");
+                        printf("\n Setvik:\n - Como foi seu dia?\n\n"); usleep(s); usleep(s);
+                        printf(" 1 - Foi legal\n 2 - Foi um saco\n ? - ...\n  ");
+                        fflush(stdin);
+                        scanf("%d", &respInt);
+                        system("cls");
+                        if(respInt == 1){
+                            printf(" %s:\n", Nome);
+                            printf(" - Foi legal. Aprendi que a febre vem das maldicoes que os Ioruns nos jogam\n"); usleep(s); usleep(s);
+                            printf(" para roubar nossa energia espiritual, e que as doencas sao causadas por\n"); usleep(s); usleep(s);
+                            printf(" por pequenos animaizinhos que vem escapam do exilio pra nos prejudicar.\n"); usleep(s); usleep(s);
+                            printf("\n Setvik:\n - Isso mesmo! Por isso, mantenha-se longe do exilio.\n");
+                            printf("\n Filho, voce pode fazer um favor?\n");
+                        }else{
+                        if(respInt == 2){
+                            printf(" %s:\n", Nome);
+                            printf(" - Foi um saco.  Os filhos de Wangeryoran continuam implicando comigo.\n"); usleep(s); usleep(s);
+                            printf(" Setvik:\n - Nao se preocupe. Vou resolver isso com o Wangeryoran");
+                            printf("\n Filho, voce pode fazer um favor?\n");
+                            paiProtetor++;
+                            }
+                        else{
+                         printf("\n Setvik:\n - Por que o silencio?"); usleep(s); usleep(s);
+                         printf("\n Os filhos de Wangeryoran continuam implicando com voce, certo?"); usleep(s); usleep(s);
+                         printf("\n Nao se preocupe. Vou resolver isso com o Wangeryoran.");usleep(s); usleep(s);
+                          printf("\n Filho, voce pode fazer um favor?\n");
+                         paiProtetor++;
+                        }
+
+                        }
+
+                        usleep(s); usleep(s);
+            }
+                         printf("\n Va em busca de seu irmao que foi brincar com os filho dos Hotnor na feira.\n");
+
+
+return 0;
+}
