@@ -35,7 +35,7 @@ return(7);
 void menuSegundo(void){
 
 
-    int y;
+    char y;
 
 
         while(1){
@@ -43,47 +43,47 @@ void menuSegundo(void){
         printf(" 1 - Instrucionario\n 2 - Festival da colheita\n 3 - Comunhao\n"
                 " 4 - Casarao dos Valkron\n 5 - Filosofia de Apso\n 6 - Doencas\n ? - Ir fazer a prova.\n  ");
                 fflush(stdin);
-                scanf("%d", &y);
+                scanf("%c", &y);
                 system("cls");
 
         switch(y){
-            int z;
 
-        case 1:
+
+        case '1':
             puts("\n");
             printf(" Instrucionario: Instituicao educacional-cientifica da Igreja, aliada ao\n ensino religioso.\n");
             break;
-        case 2:
+        case '2':
             puts("\n");
             printf(" Festival da colheita: Festividade local que ocorre a cada defolhagem do\n outono em Hyalton,"
                    " onde se compartilham entre os habitantes, as\n farturas das colheitas.\n");
             break;
-         case 3:
+         case '3':
              puts("\n");
             printf(" Comunhao: Momento da partilha da fartura.\n");
             break;
-         case 4:
+         case '4':
              puts("\n");
             printf(" Casarao dos Valkron: Os Valkron sao uma das familias mais antigas a se mudar\n para Hyalton."
                    " Eles ajudaram a fundar a cidade. Os Valkron vivem em uma\n mansao tao antiga quanto Hyalton."
                    " O lugar mais parece uma velha ruina, mas\n isso que a torna tao resitente pelas eras.\n");
             break;
-         case 5:
+         case '5':
              puts("\n");
             printf(" Filosofia de Apso:");
             printf(" O grande pensador Chong Apso afirma que tudo sao os atomos.\n");
             printf(" Ele diz que todas as nossas escolhas estao programadas.\n");
-            printf(" Para Apso, tudo que voce faz ja foi escito para ser daquele jeito,\n");
+            printf(" Para Apso, tudo que voce faz ja foi escrito para ser daquele jeito,\n");
             printf(" pois as suas escolhas possiveis estao escritas no atomo.\n");
             printf(" E ele denomina esse atomo de bytes.\n");
             break;
-         case 6:
+         case '6':
             puts("\n");
             printf(" Doencas: As doencas sao causadas por criaturas do exilio ou pelas\n madicoes dos Ioruns.");
             break;
          default:
            return(0);
-
+           break;
 
 
             }
@@ -189,4 +189,3 @@ puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* 
 
 return(0);
 }
-
