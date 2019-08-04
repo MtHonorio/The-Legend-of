@@ -218,8 +218,8 @@ printf("\n\t%c) Cavalaria  %c) Arquearia  %c) Pesca\n  \t ");
 printf("\n Questao 5: Quem causa as doencas?");
 printf("\n\t%c) Os exilados e os Ioruns %c) Comidas vermelhas  %c) Animais noturnos\n", a5, b5, c5);
 
- puts("\n   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");        //--------------//
-    puts("\n\n");                                                                            //              //
+    puts("\n   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");   //--------------//
+    puts("\n\n");                                                                              //              //
     puts("\t\t(Pressione qualquer tecla para continuar...)");                                  //   FINAL DE   //
     fflush(stdin);                                                                             //     SEÇÃO    //
     getch(); system("cls");                                                                    //              //
