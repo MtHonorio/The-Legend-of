@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 
-#define s 99//9999 //FUNÇÃO UNSLEEP (Tira as barras para voltar ao normal)
+#define s 999999 //FUNÇÃO UNSLEEP (Tira as barras para voltar ao normal)
 
 int indiferenca, paiProtetor, ansiedade, respInt;
 char Nome[10];
@@ -56,6 +56,7 @@ int SW1 (int respPrimeiraPergunta){
                             indiferenca = indiferenca++;
                             break;
                             }
+                            break;
                             //SE ELE NÃO ESTÁ ANSIOSO:
                             case 2:
                             usleep(s); usleep(s);
@@ -106,7 +107,7 @@ int SW2(int respInt){
                             printf(" %s:\n", Nome);
                             printf(" - Foi legal. Aprendi que a febre vem das maldicoes que os Ioruns nos jogam\n"); usleep(s); usleep(s);
                             printf(" para roubar nossa energia espiritual, e que as doencas sao causadas por\n"); usleep(s); usleep(s);
-                            printf(" por pequenos animaizinhos que vem escapam do exilio pra nos prejudicar.\n"); usleep(s); usleep(s);
+                            printf(" por pequenos animaizinhos que escapam do exilio pra nos prejudicar.\n"); usleep(s); usleep(s);
                             printf("\n Setvik:\n - Isso mesmo! Por isso, mantenha-se longe do exilio.\n");usleep(s); usleep(s);
                             printf("\n Voce pode fazer um favor?\n");usleep(s); usleep(s);
                             break;
@@ -310,13 +311,13 @@ int main(){
 
         Lot3();
         //FINAL DE SEÇÃO----------------------------------------------------------------------------------------
-
-        Lot4();
             scanf("%d", &respInt);
             system("cls");
             usleep(s); usleep(s);
 
         SW2(respInt);
+
+        Lot4();
 
 
         //NA FEIRA-------------------------------------------------------------------------------------
