@@ -92,7 +92,10 @@ void menuSegundo(void){
 
 int Prova(void){
 int menu1, menu2, resultado=0;
+int z;
 char alternativa;
+char a1='a', b1='b', c1='c', a2='a', b2='b', c2='c', a3='a', b3='b', c3='c';
+char a4='a', b4='b', c4='c', a5='a', b5='b', c5='c';
 puts("\n");
 usleep(s); usleep(s);
 printf(" Dalia:\n - O que voce quer fazer?\n");usleep(s); usleep(s);
@@ -120,41 +123,111 @@ puts("\n    Instrucionario Matriz de Hyalton");
 puts("\n    Professor: H. Guido");
 printf("\n    Aluno(a): Insira o nome aqui");
 printf("\n\n Questao 1: Quem foi Chong Apso?\n");
-printf("\n\ta) Um mercador  b) Um pensador  c) Um alquimista\n  \t ");
+printf("\n\t%c) Um mercador  %c) Um pensador  %c) Um alquimista\n  \t ", a1, b1, c1);
 fflush(stdin);
 scanf("%c", &alternativa);
+system("cls");
 alternativa = toupper(alternativa);
 if(alternativa == 'B'){resultado++;}
+if(alternativa== 'A'){a1 = 'x';} //***************************//
+if(alternativa== 'B'){b1 = 'x';} // ALTERNATIVAS   ESCOLHIDAS //
+if(alternativa== 'C'){c1 = 'x';} //***************************//
 //printf("%c", alternativa);
 //printf("%d", resultado);
+
+
+system("cls");
+puts("\n    Quarta prova de conhecimentos gerais");
+puts("\n    Instrucionario Matriz de Hyalton");
+puts("\n    Professor: H. Guido");
+printf("\n    Aluno(a): Insira o nome aqui");
+printf("\n\n Questao 1: Quem foi Chong Apso?\n");
+printf("\n\t%c) Um mercador  %c) Um pensador  %c) Um alquimista\n  \t ", a1, b1, c1);
+
 printf("\n\n Questao 2: Quando ocorre o festival da colheita?\n");
-printf("\n\ta) Outono  b) Primavera  c) Inverno\n  \t ");
+printf("\n\t%c) Outono  %c) Primavera  %c) Inverno\n  \t ", a2, b2, c2);
 fflush(stdin);
 scanf("%c", &alternativa);
 alternativa = toupper(alternativa);
 if(alternativa == 'A'){resultado++;}
+if(alternativa== 'A'){a2 = 'x';} //***************************//
+if(alternativa== 'B'){b2 = 'x';} // ALTERNATIVAS   ESCOLHIDAS //
+if(alternativa== 'C'){c2 = 'x';} //***************************//
 system("cls");
 
+
+
 printf("\n\n Questao 3: O que e a Comunhao?\n");
-printf("\n  a) Evento para partilhar farturas  b) Evento de pesca  c) Evento esportivo\n  \t ");
+printf("\n  %c) Evento para partilhar farturas  %c) Evento de pesca  %c) Evento esportivo\n  \t ", a3, b3, c3);
 fflush(stdin);
 scanf("%c", &alternativa);
 alternativa = toupper(alternativa);
 if(alternativa == 'A'){resultado++;}
+if(alternativa== 'A'){a3 = 'x';} //***************************//
+if(alternativa== 'B'){b3 = 'x';} // ALTERNATIVAS   ESCOLHIDAS //
+if(alternativa== 'C'){c3 = 'x';} //***************************//
 
-printf("\n\n Questao 4: Quais desses eventos nao ocorre no festival da colheita?\n");
-printf("\n\ta) Cavalaria  b) Arquearia  c) Pesca\n  \t ");
+
+system("cls");
+printf("\n\n Questao 3: O que e a Comunhao?\n");
+printf("\n  %c) Evento para partilhar farturas  %c) Evento de pesca  %c) Evento esportivo\n  \t ", a3, b3, c3);
+
+printf("\n\n Questao 4: Quais desses eventos nao ocorre no festival da colheita?\n", a4, b4, c4);
+printf("\n\t%c) Cavalaria  %c) Arquearia  %c) Pesca\n  \t ");
 fflush(stdin);
 scanf("%c", &alternativa);
 alternativa = toupper(alternativa);
 if(alternativa == 'C'){resultado++;}
+if(alternativa== 'A'){a4 = 'x';} //***************************//
+if(alternativa== 'B'){b4 = 'x';} // ALTERNATIVAS   ESCOLHIDAS //
+if(alternativa== 'C'){c4 = 'x';} //***************************//
+
+system("cls");
+printf("\n\n Questao 3: O que e a Comunhao?\n");
+printf("\n  %c) Evento para partilhar farturas  %c) Evento de pesca  %c) Evento esportivo\n  \t ", a3, b3, c3);
+printf("\n\n Questao 4: Quais desses eventos nao ocorre no festival da colheita?\n", a4, b4, c4);
+printf("\n\t%c) Cavalaria  %c) Arquearia  %c) Pesca\n  \t ");
+
 
 printf("\n\n Questao 5: Quem causa as doencas?\n");
-printf("\n\ta) Os exilados e os Ioruns b) Comidas vermelhas  c) Animais noturnos\n  \t ");
+printf("\n\t%c) Os exilados e os Ioruns %c) Comidas vermelhas  %c) Animais noturnos\n  \t ", a5, b5, c5);
 fflush(stdin);
 scanf("%c", &alternativa);
 alternativa = toupper(alternativa);
 if(alternativa == 'A'){resultado++;}
+if(alternativa == 'C'){resultado++;}
+if(alternativa== 'A'){a5 = 'x';} //***************************//
+if(alternativa== 'B'){b5 = 'x';} // ALTERNATIVAS   ESCOLHIDAS //
+if(alternativa== 'C'){c5 = 'x';} //***************************//
+
+system("cls");
+
+puts("\n Suas respostas:");
+printf("\n Questao 1: Quem foi Chong Apso?");
+printf("\n\t%c) Um mercador  %c) Um pensador  %c) Um alquimista\n  \t ", a1, b1, c1);
+
+printf("\n Questao 2: Quando ocorre o festival da colheita?");
+printf("\n\t%c) Outono  %c) Primavera  %c) Inverno\n  \t ", a2, b2, c2);
+
+printf("\n Questao 3: O que e a Comunhao?");
+printf("\n  %c) Evento para partilhar farturas  %c) Evento de pesca  %c) Evento esportivo\n  \t ", a3, b3, c3);
+
+printf("\n Questao 4: Quais desses eventos nao ocorre no festival da colheita?", a4, b4, c4);
+printf("\n\t%c) Cavalaria  %c) Arquearia  %c) Pesca\n  \t ");
+
+printf("\n Questao 5: Quem causa as doencas?");
+printf("\n\t%c) Os exilados e os Ioruns %c) Comidas vermelhas  %c) Animais noturnos\n", a5, b5, c5);
+
+ puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");        //--------------//
+    puts("\n\n\n");                                                                            //              //
+    puts("\t\t(Pressione qualquer tecla para continuar...)");                                  //   FINAL DE   //
+    fflush(stdin);                                                                             //     SEÇÃO    //
+    getch(); system("cls");                                                                    //              //
+    usleep(s); usleep(s); usleep(s);                                                           //--------------//
+
+
+
+
 
 usleep(s); usleep(s);
 resultado = resultado*2;
