@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int num=0, cont=0, i=0 ,j=0,i2=0,j2=0, aux=0, numero=0,soma=0;
+void scans(int a[]){ 
+for(cont=0;cont<=num-1;cont++){
+    scanf("%d", &numero);
+    a[cont] = numero;
+}
+}
+int Somar(int a[]){
+for(j=0;j<=num-1;j++){
+
+                if(a[i] == a[j]){
+                  soma = soma + 1;
+                }
+
+        }
+        return(soma);
+}
+
+int Ordernar(int a[]){
+    for (i2 = 0; i2 <= num-1; i2++){
+
+        for ( j2 = 0; j2 <= num-1; j2++){
+        if (a[i2] < a[j2]){
+            aux = a[i2];
+            a[i2] = a[j2];
+            a[j2] = aux;
+            }
+        }
+     }
+ }
+
+int main(){
+int n, m;
+scanf("%d", &num);
+int a[num];
+scans(a);
+Ordernar(a);
+
+for(i=0;i<=num-1;i++){
+
+
+n = Somar(a);
+
+if(n== 1)  printf("%d aparece %d vez(es)\n", a[i], n);
+if (n > 1){
+printf("%d aparece %d vez(es)\n", a[i], n);
+ i = i + n - 1;
+}
+
+n = 0;
+soma = 0;
+
+}
+
+return(0);
+}
