@@ -1,0 +1,179 @@
+#include <stdio.h>
+#include <time.h>
+
+#define s 999999
+
+
+void Lot6(void){
+
+    int respo1, respo2, respo3, contraataque, arremessavel, fruta[20];
+
+    printf("Voce finalmente esta alem dos limites da cidade de Hyalton.\n");
+    printf("Um corrego de cerca de cinco metros de largura paira na sua frente.\n"); usleep(s); usleep(s); usleep(s);
+    printf("Diversas petalas das roseiras que ali repousavam, agora pairavam\nna superficie da agua que fluia levemente naquele local.\n"); usleep(s); usleep(s); usleep(s);
+    printf("A vegetacao cor laranja esverdeada ficava cada vez mais densa, a medida que se distanciava de Hyalton.\n"); usleep(s); usleep(s); usleep(s);
+    printf("Apenas moitas balancando ao vento. Era tudo o que tinha ali, ate...\n"); usleep(s);usleep(s);usleep(s);usleep(s); usleep(s);
+
+    system("cls");
+
+    printf("VOCE SENTE ALGO AGARRAR O SEU TORNOZELO.\n"); usleep(s);
+    printf("Uma mao penquena e molhada o agarra forte, ate ficar uma marca vermelha dos dedos e, enfim\n"); usleep(s);
+    printf("O puxa em direcao a moita que estava inocentemente do seu lado, fazendo-o cair em sua direcao.\n"); usleep(s);usleep(s); usleep(s);
+    printf("Era o seu irmao. E nao so ele, mas Otskel e Tritska o acompanhavam,\nambos com o dedo indicador pressionando os labios em sinal de silencio.\n"); usleep(s);usleep(s);
+    printf("Os tres estavam com as maos e pernas molhadas mas nao parecia que tinham se banhado ali.\n Perto deles, havia uma sacola velha e desfiada.\n\n");
+    printf("1 - Que diabos?!\n2 - O que estao fazendo?!\n3 - Esta na hora de ir pra casa! Os tres.\n");
+    scanf("%d", &respo1);
+
+    switch(respo1){
+
+    case 1:
+        printf("Yurin:\n- Shh! Vai estragar o plano!\n\n");
+        printf("1 - Que Plano?!!\n? - Que Plano?!!\n");
+        fflush(stdin);
+        scanf("%d", &respo2);
+
+        switch(respo2){
+
+        case 1:
+            printf("\n- Vinganca! - Disse Tritska.\n");
+            printf("- Victor Wangeryoran esta vindo ate aqui. E nos estamos preparados. - Disse Otskel.\n");
+            printf("\n1 - Victor Wangeryoran nao me interessa mais. Voces precisam ir pra casa.\n? - Otimo, estava esperando o momento do troco. Acho que e agora.\n");
+            fflush(stdin);
+            scanf("%d", &respo3);
+            if(respo3==1)
+                respo3=0;
+            else
+                respo3=1;
+            break;
+
+        default:
+            printf("\n- Vinganca! - Disse Tritska.\n");
+            printf("- Victor Wangeryoran esta vindo ate aqui. E nos estamos preparados. - Disse Otskel.\n");
+            printf("\n1 - Victor Wangeryoran nao me interessa mais. Voces precisam ir pra casa.\n? - Otimo, estava esperando o momento do troco. Acho que e agora.\n");
+            scanf("%d", &respo3);
+            if(respo3==1)
+                respo3=0;
+            else
+                respo3=1;
+            break;
+        }
+        break;
+
+        case 2:
+        printf("Yurin:\n- Colocando o plano em pratica.\n\n");
+        printf("1 - Que Plano?!!\n? - Que Plano?!!\n");
+        fflush(stdin);
+        scanf("%d", &respo2);
+
+        switch(respo2){
+
+        case 1:
+            printf("\n- Vinganca! - Disse Tritska.\n");
+            printf("- Victor Wangeryoran esta vindo ate aqui. E nos estamos preparados. - Disse Otskel.\n");
+            printf("\n1 - Victor Wangeryoran nao me interessa mais. Voces precisam ir pra casa.\n? - Otimo, estava esperando o momento do troco. Acho que e agora.\n");
+            fflush(stdin);
+            scanf("%d", &respo3);
+            if(respo3==1)
+                respo3=0;
+            else
+                respo3=1;
+            break;
+        default:
+            printf("\n- Vinganca! - Disse Tritska.\n");
+            printf("- Victor Wangeryoran esta vindo ate aqui. E nos estamos preparados. - Disse Otskel.\n");
+            printf("\n1 - Victor Wangeryoran nao me interessa mais. Voces precisam ir pra casa.\n? - Otimo, estava esperando o momento do troco. Acho que e agora.\n");
+            fflush(stdin);
+            scanf("%d", &respo3);
+            if(respo3==1)
+                respo3=0;
+            else
+                respo3=1;
+            break;
+
+    }
+        break;
+        case 3:
+            printf("Yurin:\n - Ah, nao acredito que nao vai participar, mas e o que ele fez contigo?\n");
+            printf("\n1 - Nao me interessa, ele e um animal, mas eu nao.\n? - Ta, eu fico. Mas qual o plano?\n");
+            fflush(stdin);
+            scanf("%d", &respo3);
+            if(respo3==1)
+                respo3=0;
+            else
+                respo3=1;
+        break;
+    }
+        if(respo3==0){
+            system("cls");
+            printf("Mesmo sem a vontade deles, voce os leva de volta a Hyalton, deixando Tritska com Asha na volta pela feira\n e Otskel volta entao para Hotnor.\n"); usleep(s); usleep(s);
+            printf("Voce leva seu irmao de volta para casa e ele nao fala com voce o percurso todo.\n Voce sente medo que algo como *'aquilo'* aconteca novamente, mas nao acontece.\n");usleep(s);usleep(s);
+            printf("O seu pai, ao ve-lo com o seu irmao, faz um aceno com a cabeca, mas nao diz mais nada. Talvez aquilo significasse algo.\n");usleep(s); usleep(s);
+            printf("\n\n\n\tFIM DO CAPITULO 1.");
+        }else{
+            system("cls");
+            printf("Yurin, por algum motivo o abracou, e pareceu estranho no comeco mas voce sentiu uma ligacao de irmandade com o mesmo.\n");usleep(s);usleep(s);usleep(s);
+            printf("-Valeu. Eu nao podia deixar aquele babaca impune, voce e meu irmao. - Disse Yurin.\n");usleep(s);usleep(s);usleep(s);
+            printf("Naquele momento, ele pareceu bem mais velho que voce.\n");usleep(s);usleep(s);usleep(s);
+            printf("Otskel entao abre a sacola que  estava jogada perto deles e um intenso odor putrefato emerge,\n e assim voce consegue ver diversos vegetais e frutas podres.\n"); usleep(s);usleep(s);usleep(s);
+            printf("- Peguei isso do lixo que meu pai ia jogar fora. - Disse Otskel.\n");
+            printf("Yurin entao diz:\n- Fizemos uma carta falsa e dissemos que quem mandou foi a Asha.\nTritska diz:\n-Lembra que ele ja tentou namorar com minha irma? Entao...");usleep(s);usleep(s);usleep(s);
+            printf("\nOtskel:\n- A gente falou na carta que queriamos, ou Asha queria, se encontrar com ele aqui, no por do sol.\n"); usleep(s);usleep(s);usleep(s);
+            printf("Yurin:\n-Entao estamos esperando aqui, ele deve aparecer logo.\n");usleep(s);usleep(s);usleep(s);
+
+            puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");    
+            puts("\n\n\n");                                                                     
+            puts("\t\t(Pressione qualquer tecla para continuar...)\n\n\n");                                
+            fflush(stdin);
+            puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");                                                                            //     SEÇÃO    //
+            getch(); system("cls");                                                                   
+            usleep(s); usleep(s); usleep(s);
+            system("cls");
+
+            printf("Os quatro esperaram, entao, por cerca de dez minutos, antes que o plano fosse posto em pratica.\n");usleep(s);usleep(s);usleep(s);
+            printf("Enfim, Victor aparece, mas algo o surpreende. Ele nao estava sozinho.\n");usleep(s);usleep(s);usleep(s);
+            printf("Nao era algo que impedisse o plano, mas ele conseguia ser estupido ao ponto de levar os outros dois pra uma ocasiao daquelas, ressaltou Otskel.\n");usleep(s);usleep(s);
+            printf("Victor estava com Frord e Ikaro, por algum motivo. Os tres andavam juntos na escola e nao desgrudavam fora dela.\n Mas Yurin nao achou que ele fosse trazer os dois para la.\n");usleep(s);usleep(s);usleep(s);
+            printf("Otskel:\n-Muito bem, peguem alguma coisa da sacola, mas lembrem de nao colocar essa mao no nariz por um tempo.\n");usleep(s);usleep(s);usleep(s);
+            printf("1 - Banana podre.\n2 - Mamão molenga.\n3 - Laranja com larvas\n4 - Tomate esbagacado\n");
+            fflush(stdin);
+            scanf("%d", &arremessavel);
+
+            switch(arremessavel){
+
+            case 1:
+                fruta[20] = "banana";
+                break;
+            case 2:
+                fruta[20] = "mamao";
+                break;
+            case 3:
+                fruta[20] = "laranja";
+                break;
+            case 4:
+                fruta[20] = "tomate";
+                break;
+            }
+                printf("Voce pega entao a %s molenga e podre, segurando-a com um certo grau de nojo.\n", fruta[20]);
+                printf("Os tres agarram alguma coisa e quando finalmente tem algo em maos, Otskel comeca a contagem.\n"); usleep(s);usleep(s);usleep(s);
+                system("cls"); usleep(s);
+                printf("3...\n"); usleep(s);usleep(s);
+                printf("2...\n"); usleep(s);usleep(s);
+                printf("1...\n"); usleep(s);usleep(s);
+                printf("Yurin foi o primeiro a se levantar da moita, jogando um pedaço de mamao negro na cabeca de Victor Wangeryoran.\n");usleep(s);usleep(s);usleep(s);
+                printf("Voce seguida e atira %s podre neles, acertando em cheio no torax de Victor,\n que estava sentado na beira do rio com os outros dois.\n");usleep(s);usleep(s);usleep(s);
+                printf("Os outros tres comecaram a jogar mais coisas neles enquanto os otarios se debrucavam em frutas podres,\n tentando se proteger, inutilmente.\n"); usleep(s);usleep(s);usleep(s);
+                printf("Um espetaculo de cores, insetos e larvas estava bem ali na sua frente. Os otarios que jogavam coisas em voce, zombavam do que voce possuia\n e da sua familia ser mais pobre que as deles,\n agora estavam no seu devido lugar, com insetos e moscas, como vegetais podres que eram.\n"); usleep(s);usleep(s);
+                printf("-EU VOU PEGAR VOCE MULLER!\n");usleep(s);usleep(s);
+                printf("-E VOCES TAMBEM SEUS INSETINHOS!\n");usleep(s);
+                printf("Tritska gritou algo para se limparem antes disso ou algo parecido, mas voce nao entendeu,\n pois estava correndo com os demais de volta para Hyalton.\n");usleep(s);usleep(s);
+
+
+        }
+}
+
+int main(){
+
+    Lot6();
+
+return 0;
+}
