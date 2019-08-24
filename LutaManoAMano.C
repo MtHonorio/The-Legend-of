@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
-#include <stdlib.h>// necessário p/ as funções rand() e srand()
+#include <stdlib.h>
 #include <time.h>
 #include <string.h>
 
