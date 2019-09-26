@@ -931,13 +931,13 @@ void RioVermelho(){
                 printf("\n Victor:\n - EU VOU PEGAR TODOS VOCES!\n\n");usleep(s);usleep(s);
                 printf(" Tritska gritou algo, mas voce nao entendeu, pois estava correndo com os demais de volta para Hyalton.\n\n");usleep(s);usleep(s);
 
-    puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");    //--------------//
-    puts("\n");
-    puts("\t\t(FIM DO CAPITULO I)");                                                                                  //              //
+    puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");    
+    puts("\n");                                                                               //--------------//
+    puts("\t\t(FIM DO CAPITULO I)");                                                          //              //
     puts("\t\t(Pressione qualquer tecla para continuar...)");                                 //   FINAL DE   //
     fflush(stdin);                                                                            //     SEÇÃO    //
     getch(); system("cls");                                                                   //              //
-    usleep(s); usleep(s); usleep(s);                                                          //--------------
+    usleep(s); usleep(s); usleep(s);                                                          //--------------//
 
         }
 
