@@ -11,6 +11,7 @@ Linguagem utilizada:  C
 
 <p align="center">
   <img width="750" height="400" src="https://github.com/dlrds/projetoIP/blob/master/imagens/prompt.PNG">
-  
-  Prompt do projeto
 </p>
+
+
+<p align="center"> Prompt do projeto </p>
