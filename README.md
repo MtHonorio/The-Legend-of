@@ -14,4 +14,4 @@ Linguagem utilizada:  C
 </p>
 
 
-<p align="center"> Prompt do projeto </p>
+<p align="center"> (Imagem do projeto) </p>
