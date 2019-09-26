@@ -7,6 +7,8 @@ Centro de Informática - UFPB
 
 Feito por Diego Luis, Matheus B Honório e Miguel Elias
 
+Linguagem utilizada:  C
+
 <p align="center">
   <img width="750" height="400" src="https://github.com/dlrds/projetoIP/blob/master/imagens/prompt.PNG">
 </p>
