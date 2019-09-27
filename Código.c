@@ -1,12 +1,12 @@
 /*
-Projeto final para a cadeira de Introdução à Programação
+Projeto final para a cadeira de IntroduÃ§Ã£o Ã  ProgramaÃ§Ã£o
 Ministrada por Lincoln David Nery e Silva
-Centro de Informática - UFPB
+Centro de InformÃ¡tica - UFPB
 
 
 Grupo:
 Diego Luis
-Matheus Honório
+Matheus HonÃ³rio
 Miguel Elias
 
 */
@@ -24,7 +24,7 @@ Miguel Elias
 #define UP 72
 #define DOWN 80
 #define ENTER 13
-#define s 999999 //FUNÇÃO UNSLEEP (Tira as barras para voltar ao normal)
+#define s 99//9999 //FUNÃ‡ÃƒO UNSLEEP (Tira as barras para voltar ao normal)
 
 
 
@@ -47,7 +47,7 @@ typedef struct
     int paiProtetor;//PAIPROTETOR = SE AVISOU OS PAIS SOBRE OS FILHOS DO WALKRON
     int NaoBuscouIrmao; //BUSCOU O IRMAO
     int avisar; //AVISOU QUE ASHA ESTAVA A PROCURA DE TRITSKA
-} Cap1Var; //VARIÁVEIS DO CAP1
+} Cap1Var; //VARIÃVEIS DO CAP1
 
 
 Cap1Var escolhas;
@@ -69,7 +69,7 @@ void Opcoes (int max)
 
 
 
-//INCIAÇÃO DO JOGO
+//INCIAÃ‡ÃƒO DO JOGO
 void Tutorial ()
 {
     char aspas = '"', loopDoTutorial=2;
@@ -231,7 +231,7 @@ int SW1 (int respPrimeiraPergunta)
 
     int respInt;
     atual.select = 1;
-    switch(respPrimeiraPergunta) //SWITCH PARA CHECAR SE O JOGADOR ESTÁ ANSIOSO OU NÃO
+    switch(respPrimeiraPergunta) //SWITCH PARA CHECAR SE O JOGADOR ESTÃ ANSIOSO OU NÃƒO
     {
     case 1:
         while (1)
@@ -260,7 +260,7 @@ int SW1 (int respPrimeiraPergunta)
         switch(respInt)  //SWITCH PARA CASO O JOGADOR ESTEJA ANSIOSO
         {
 
-        //SE ELE ESTÁ ANSIOSO:
+        //SE ELE ESTÃ ANSIOSO:
         case 1:
             usleep(s);
             usleep(s);
@@ -300,7 +300,7 @@ int SW1 (int respPrimeiraPergunta)
             break;
         }
         break;
-    //SE ELE NÃO ESTÁ ANSIOSO:
+    //SE ELE NÃƒO ESTÃ ANSIOSO:
     case 2:
         usleep(s);
         usleep(s);
@@ -311,7 +311,7 @@ int SW1 (int respPrimeiraPergunta)
         escolhas.ansiedade=0;
         break;
 
-    //SE ELE É INDIFERENTE:
+    //SE ELE Ã‰ INDIFERENTE:
     default:
         printf("\n Dalia:\n - Nao quer falar comigo, entendi...\n");
         usleep(s);
@@ -603,7 +603,7 @@ char Name(void)
         //CHECAR O NOME-----------------------------------------------------------------------------------------------------------------
         printf("\n Qual o seu nome?\n  ");
         fflush(stdin);
-        fgets(&Nome, 16, stdin); //MÁXIMO DE 15 CARACTERES
+        fgets(&Nome, 16, stdin); //MÃXIMO DE 15 CARACTERES
         TiraBarra(&Nome);
         system("cls");
 
@@ -695,7 +695,7 @@ void Lot2 (void)
     puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");    //--------------//
     puts("\n\n\n\n\n\n");                                                                     //              //
     puts("\t\t(Pressione qualquer tecla para continuar...)");                                 //   FINAL DE   //
-    fflush(stdin);                                                                            //     SEÇÃO    //
+    fflush(stdin);                                                                            //     SEÃ‡ÃƒO    //
     getch();                                                                                  //              //
     system("cls");                                                                             //--------------//
     usleep(s);
@@ -721,7 +721,7 @@ void Lot3 (void)
         printf(" %c%s, venha aqui!%c\n", aspas, Nome, aspas);
         usleep(s);
         usleep(s);
-        printf("\n Era Setvik, seu pai.\n");
+        printf("\n Era Setvik, seu pai.\n\n");
         usleep(s);
         usleep(s);
         printf(" %s Ir ate ele\n", (atual.select == 1) ? "=>" : "  ");
@@ -745,7 +745,7 @@ void Lot4 (void)
     puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");    //--------------//
     puts("\n\n\n\n\n\n");                                                                     //              //
     puts("\t\t(Pressione qualquer tecla para continuar...)");                                 //   FINAL DE   //
-    fflush(stdin);                                                                            //     SEÇÃO    //
+    fflush(stdin);                                                                            //     SEÃ‡ÃƒO    //
     getch();                                                                                  //              //
     system("cls");                                                                            //--------------//
     usleep(s);
@@ -1211,7 +1211,7 @@ void RioVermelho()
         puts("\n");
         puts("\t\t(Pressione qualquer tecla para continuar...)\n");
         fflush(stdin);
-        puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");                                                                            //     SEÇÃO    //
+        puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");                                                                            //     SEÃ‡ÃƒO    //
         getch();
         system("cls");
         usleep(s);
@@ -1244,7 +1244,7 @@ void RioVermelho()
         puts("\n");
         puts("\t\t(Pressione qualquer tecla para continuar...)\n");
         fflush(stdin);
-        puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");                                                                            //     SEÇÃO    //
+        puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");                                                                            //     SEÃ‡ÃƒO    //
         getch();
         system("cls");
         usleep(s);
@@ -1387,7 +1387,7 @@ void RioVermelho()
         puts("\n");                                                                                //--------------//
         puts("\t\t(FIM DO CAPITULO I)");                                                           //              //
         puts("\t\t(Pressione qualquer tecla para continuar...)");                                  //   FINAL DE   //
-        fflush(stdin);                                                                             //     SEÇÃO    //
+        fflush(stdin);                                                                             //     SEÃ‡ÃƒO    //
         getch();                                                                                   //              //
         system("cls");                                                                             //--------------//
         usleep(s);
@@ -1415,11 +1415,11 @@ int main()
     Tutorial();
     usleep(s);
     usleep(s);
-    Name(); // Função da Escolha do Nome do Personagem.
+    Name(); // FunÃ§Ã£o da Escolha do Nome do Personagem.
 
-    //COMEÇO DO JOGO--------------------------------------------------------------------------------------------------------------
+    //COMEÃ‡O DO JOGO--------------------------------------------------------------------------------------------------------------
 
-    Lot1(); //Função do 1º Lot de Texto.
+    Lot1(); //FunÃ§Ã£o do 1Âº Lot de Texto.
     fflush(stdin);
     system("cls");
     usleep(s);
@@ -1427,7 +1427,7 @@ int main()
 
     SW1 (respPrimeiraPergunta);
 
-    Lot2(); //Função do 2º Lot de Texto.
+    Lot2(); //FunÃ§Ã£o do 2Âº Lot de Texto.
 
     //AO CHEGAR EM CASA-------------------------------------------------------------------------------------
     usleep(s);
@@ -1436,7 +1436,7 @@ int main()
     usleep(s);
 
     Lot3();
-    //FINAL DE SEÇÃO----------------------------------------------------------------------------------------
+    //FINAL DE SEÃ‡ÃƒO----------------------------------------------------------------------------------------
     fflush(stdin);
     system("cls");
     usleep(s);
