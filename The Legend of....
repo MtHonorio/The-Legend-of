@@ -24,7 +24,7 @@ Miguel Elias
 #define UP 72
 #define DOWN 80
 #define ENTER 13
-#define s 99//9999 //FUNÇÃO UNSLEEP (Tira as barras para voltar ao normal)
+#define s 999999 //FUNÇÃO UNSLEEP (Tira as barras para voltar ao normal)
 
 
 
@@ -344,10 +344,7 @@ int SW2(int respInt)
             usleep(s);
             usleep(s);
             printf(" %s Ir ate ele\n", (atual.select == 1) ? "=>" : "  ");
-            printf(" %s Ir ate ele\n", (atual.select == 2) ? "=>" : "  ");
-            printf(" %s Ir ate ele\n", (atual.select == 3) ? "=>" : "  ");
-
-            Opcoes(3);
+            Opcoes(1);
             if(atual.key == ENTER)
             {
                 break;
@@ -359,7 +356,7 @@ int SW2(int respInt)
         usleep(s);
         usleep(s);
         atual.select = 1;
-        printf(" Setvik:\n - Voce pode fazer um favor?\n");
+        printf("\n Setvik:\n - Voce pode fazer um favor?\n");
 
 
 
@@ -464,9 +461,7 @@ int SW3(int respInt)
             usleep(s);
             usleep(s);
             printf("\n\n %s Dizer que na verdade voce esta procurando Otskel e Yurin\n", (atual.select == 1) ? "=>" : "  ");
-            printf(" %s Dizer que na verdade voce esta procurando Otskel e Yurin\n", (atual.select == 2) ? "=>" : "  ");
-
-            Opcoes(2);
+            Opcoes(1);
             if(atual.key == ENTER)
             {
                 break;
@@ -902,9 +897,7 @@ void ProcurarSozinho()
                 usleep(s);
                 usleep(s);
                 printf("\n\n %s Nao.\n", (atual.select == 1) ? "=>" : "  ");
-                printf(" %s Nao.\n", (atual.select == 2) ? "=>" : "  ");
-
-                Opcoes(2);
+                Opcoes(1);
                 if(atual.key == ENTER)
                 {
                     break;
@@ -1015,9 +1008,7 @@ void RioVermelho()
             usleep(s);
             usleep(s);
             printf(" %s Que Plano?!!\n", (atual.select == 1) ? "=>" : "  ");
-            printf(" %s Que Plano?!!\n", (atual.select == 2) ? "=>" : "  ");
-
-            Opcoes(2);
+            Opcoes(1);
             if(atual.key == ENTER)
             {
                 break;
@@ -1077,9 +1068,7 @@ void RioVermelho()
             usleep(s);
             usleep(s);
             printf(" %s Que Plano?!!\n", (atual.select == 1) ? "=>" : "  ");
-            printf(" %s Que Plano?!!\n", (atual.select == 2) ? "=>" : "  ");
-
-            Opcoes(2);
+            Opcoes(1);
             if(atual.key == ENTER)
             {
                 break;
@@ -1390,7 +1379,7 @@ void RioVermelho()
         printf("\n Victor:\n - EU VOU PEGAR TODOS VOCES!\n\n");
         usleep(s);
         usleep(s);
-        printf(" Tritska gritou algo, mas voce nao entendeu, pois estava correndo com os demais de volta para Hyalton.\n\n");
+        printf(" Tritska gritou algo, mas voce nao entendeu, pois estava correndo com os\n demais de volta para Hyalton.\n\n");
         usleep(s);
         usleep(s);
 
