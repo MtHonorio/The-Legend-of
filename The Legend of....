@@ -745,7 +745,7 @@ void Lot3 (void)
 
 void Lot4 (void)
 {
-    printf(" Va em busca de seu irmao que esta com os filhos dos Hotnor na feira.\n");
+    printf("\n Va em busca de seu irmao que esta com os filhos dos Hotnor na feira.\n");
 
     puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");    //--------------//
     puts("\n\n\n\n\n\n");                                                                     //              //
