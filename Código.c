@@ -24,7 +24,7 @@ Miguel Elias
 #define UP 72
 #define DOWN 80
 #define ENTER 13
-#define s 99//9999 //FUNÇÃO UNSLEEP (Tira as barras para voltar ao normal)
+#define s 999999 //FUNÇÃO UNSLEEP (Tira as barras para voltar ao normal)
 
 
 
@@ -656,12 +656,12 @@ void Lot1 (void)
         usleep(s);
         usleep(s);
         usleep(s);
-        printf(" Voce sente que ela esta cansada, mas ainda assim expressa uma feicao de leveza.");
+        printf(" Voce sente que ela esta cansada, mas ainda assim expressa uma feicao de\n leveza.");
         usleep(s);
         usleep(s);
         usleep(s);
         usleep(s);
-        printf( "\nOs dois estavam a caminho de casa, passando pela enorme estrutura do Casarao dos Valkron.\n");
+        printf( "\n\n  Os dois estavam a caminho de casa, passando pela enorme estrutura do Casarao\n dos Valkron.\n");
         usleep(s);
         usleep(s);
         usleep(s);
