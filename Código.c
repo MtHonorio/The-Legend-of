@@ -78,8 +78,7 @@ void Tutorial ()
     {
         atual.select = 1;
         system("cls");
-        while (1)
-        {
+
             puts("\n\n\t\t\t          COMO JOGAR?\n\n\t\t\t             (1/4)");
             usleep(s);
             puts("\n O JOGO PERMITE VARIAS OPCOES DE ENTRADA. ");
@@ -88,6 +87,10 @@ void Tutorial ()
             puts(" PARA ESCOLHER UMA OPCAO, SELECIONE A ENTRADA QUE VOCE QUER E APERTE ENTER.\n");
             usleep(s);
             usleep(s);
+
+        while (1)
+        {
+
             printf("\n %s TUDO BEM\n", (atual.select == 1) ? "=>" : "  ");
             printf(" %s ENTENDI \n", (atual.select == 2) ? "=>" : "  ");
             printf(" %s :D\n", (atual.select == 3) ? "=>" : "  ");
@@ -97,6 +100,11 @@ void Tutorial ()
             {
                 break;
             }
+
+            puts("\n\n\t\t\t          COMO JOGAR?\n\n\t\t\t             (1/4)");
+            puts("\n O JOGO PERMITE VARIAS OPCOES DE ENTRADA. ");
+            puts(" PARA ESCOLHER UMA OPCAO, SELECIONE A ENTRADA QUE VOCE QUER E APERTE ENTER.\n");
+
 
             fflush(stdin);
         }
@@ -134,8 +142,7 @@ void Tutorial ()
 
 
         atual.select = 1;
-        while (1)
-        {
+
             puts("\n\n\t\t\t          COMO JOGAR?\n\n\t\t\t             (4/4)");
             usleep(s);
             printf("\n AS SUAS ESCOLHAS ALTERAM A HISTORIA AO LONGO DO JOGO,\n", aspas, aspas);
@@ -148,6 +155,10 @@ void Tutorial ()
             printf("\n\n\n\n O TUTORIAL ESTA CONCLUIDO. DESEJA JOGAR AGORA OU VER O TUTORIAL NOVAMENTE?\n", aspas, aspas);
             usleep(s);
             usleep(s);
+
+        while (1)
+        {
+
             printf("\n %s IR JOGAR!\n", (atual.select == 1) ? "=>" : "  ");
             printf(" %s VER TUTORIAL NOVAMENTE\n", (atual.select == 2) ? "=>" : "  ");
 
@@ -157,6 +168,12 @@ void Tutorial ()
             {
                 break;
             }
+
+            puts("\n\n\t\t\t          COMO JOGAR?\n\n\t\t\t             (4/4)");
+            printf("\n AS SUAS ESCOLHAS ALTERAM A HISTORIA AO LONGO DO JOGO,\n", aspas, aspas);
+            printf(" PORTANTO, ESCOLHA SABIAMENTE...\n\n");
+            puts("   --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * --- * ---* ---");
+            printf("\n\n\n\n O TUTORIAL ESTA CONCLUIDO. DESEJA JOGAR AGORA OU VER O TUTORIAL NOVAMENTE?\n", aspas, aspas);
 
             fflush(stdin);
         }
@@ -234,11 +251,13 @@ int SW1 (int respPrimeiraPergunta)
     switch(respPrimeiraPergunta) //SWITCH PARA CHECAR SE O JOGADOR ESTÁ ANSIOSO OU NÃO
     {
     case 1:
+
+         printf("\n Dalia:\n - Sim, mas o que vai querer ver primeiro?\n\n");
+            usleep(s);
+            usleep(s);
         while (1)
         {
-            printf("\n Dalia:\n - Sim, mas o que vai querer ver primeiro?\n\n");
-            usleep(s);
-            usleep(s);
+
             printf(" %s Campeonato de Cavalaria\n", (atual.select == 1) ? "=>" : "  ");
             printf(" %s Campeonato de Arquearia\n", (atual.select == 2) ? "=>" : "  ");
             printf(" %s Duelo de Espadachins\n", (atual.select == 3) ? "=>" : "  ");
@@ -251,6 +270,7 @@ int SW1 (int respPrimeiraPergunta)
                 break;
             }
 
+            printf("\n Dalia:\n - Sim, mas o que vai querer ver primeiro?\n\n");
             fflush(stdin);
         }
         respInt = atual.select;
@@ -285,7 +305,7 @@ int SW1 (int respPrimeiraPergunta)
             escolhas.ansiedade=3;
             break;
         case 4:
-            printf("\n Dalia:\n- Ah, e a segunda coisa que estou mais ansiosa. Soube que os Ulvin\n vao preparar um bolo para todos esse ano, nao so pros Valkron.\n");
+            printf("\n Dalia:\n - Ah, e a segunda coisa que estou mais ansiosa. Soube que os Ulvin\n vao preparar um bolo para todos esse ano, nao so pros Valkron.\n");
             usleep(s);
             usleep(s);
             printf("\n (Dalia vai lembrar de sua escolha no dia...)\n");
@@ -334,8 +354,7 @@ int SW2(int respInt)
     default:
         usleep(s);
         usleep(s);
-        while (1)
-        {
+
             printf("\n Setvik:\n - VENHA AQUI AGORA. NAO ESTA ME OUVINDO?");
             usleep(s);
             usleep(s);
@@ -343,6 +362,9 @@ int SW2(int respInt)
             printf("\n\n O grito foi tao alto que Hanne e Dalia se espantaram.\n\n");
             usleep(s);
             usleep(s);
+        while (1)
+        {
+
             printf(" %s Ir ate ele\n", (atual.select == 1) ? "=>" : "  ");
             Opcoes(1);
             if(atual.key == ENTER)
@@ -365,11 +387,13 @@ int SW2(int respInt)
         usleep(s);
         usleep(s);
         system("cls");
-        while (1)
-        {
+
             printf("\n Setvik:\n - Como foi seu dia?\n\n");
             usleep(s);
             usleep(s);
+        while (1)
+        {
+
             printf(" %s Foi legal\n", (atual.select == 1) ? "=>" : "  ");
             printf(" %s Foi um saco\n", (atual.select == 2) ? "=>" : "  ");
             printf(" %s ...\n", (atual.select == 3) ? "=>" : "  ");
@@ -379,6 +403,9 @@ int SW2(int respInt)
             {
                 break;
             }
+            printf("\n Setvik:\n - Como foi seu dia?\n\n");
+
+
         }
         fflush(stdin);
         respInt2 = atual.select;
@@ -405,8 +432,8 @@ int SW2(int respInt)
             break;
 
         case 2:
-            printf(" %s:\n", Nome);
-            printf(" - Foi um saco.  Os filhos de Wangeryoran continuam implicando comigo.\n");
+            printf("\n %s:\n", Nome);
+            printf(" - Foi um saco. Os filhos de Wangeryoran continuam implicando comigo.\n");
             usleep(s);
             usleep(s);
             printf("\n Setvik:\n - Nao se preocupe. Vou resolver isso com o Wangeryoran");;
@@ -455,17 +482,19 @@ int SW3(int respInt)
     switch(respInt)
     {
     case 1:
+	   printf("\n Hotnor:\n - Vai querer milho como sempre? Mais verde ou maduro?\n ");
+            usleep(s);
+            usleep(s);
         while (1)
         {
-            printf("\n Hotnor:\n - Vai querer milho como sempre? Mais verde ou maduro?\n ");
-            usleep(s);
-            usleep(s);
+
             printf("\n\n %s Dizer que na verdade voce esta procurando Otskel e Yurin\n", (atual.select == 1) ? "=>" : "  ");
             Opcoes(1);
             if(atual.key == ENTER)
             {
                 break;
             }
+  	    printf("\n Hotnor:\n - Vai querer milho como sempre? Mais verde ou maduro?\n ");
             fflush(stdin);
         }
         system("cls");
@@ -515,11 +544,13 @@ int SW3(int respInt)
 
     default:
 
+        escolhas.indiferenca++;
+
         while(respInt2 != 2 || respInt2 != 1)
         {
             while (1)
             {
-                escolhas.indiferenca++;
+
                 printf("\n Hotnor:\n - Voce sempre tao calado. Procura pelo seu irmao?\n ");
                 printf("\n\n %s Sim\n", (atual.select == 1) ? "=>" : "  ");
                 printf(" %s Nao\n", (atual.select == 2) ? "=>" : "  ");
@@ -561,31 +592,6 @@ int SW3(int respInt)
 
     }
 }
-
-int AttackSystem (int x)
-{
-
-    switch(x)
-    {
-    case 1:
-        return 1;
-        break;
-    case 2:
-        return 2;
-        break;
-
-    case 3:
-        return 3;
-        break;
-    case 4:
-        return 4;
-        break;
-    default:
-        return 0;
-        break;
-    }
-}
-
 
 char Name(void)
 {
@@ -648,8 +654,7 @@ char Name(void)
 
 void Lot1 (void)
 {
-    while (1)
-    {
+
         printf("\n\t\t\t\tThe Legend Of %s\n\n", Nome);
         printf("  O ceu estava cinzento em Hyalton, e Dalia caminhava ao seu lado, segurando os\n livros que se assemelhavam a tijolos.\n");
         usleep(s);
@@ -675,6 +680,8 @@ void Lot1 (void)
         usleep(s);
         usleep(s);
 
+    while (1)
+    {
         printf(" %s Claro.\n", (atual.select == 1) ? "=>" : "  ");
         printf(" %s Nem tanto.\n", (atual.select == 2) ? "=>" : "  ");
         printf(" %s ...\n", (atual.select == 3) ? "=>" : "  ");
@@ -685,6 +692,12 @@ void Lot1 (void)
             break;
         }
         fflush(stdin);
+         printf("\n\t\t\t\tThe Legend Of %s\n\n"
+        "  O ceu estava cinzento em Hyalton, e Dalia caminhava ao seu lado, segurando os\n livros que se assemelhavam a tijolos.\n"
+        " Voce sente que ela esta cansada, mas ainda assim expressa uma feicao de\n leveza."
+         "\n\n  Os dois estavam a caminho de casa, passando pela enorme estrutura do Casarao\n dos Valkron.\n"
+         "\n Naquele momento, sua irma te lanca um olhar e pergunta: \n"
+        " -E entao, ja esta com muita ansiedade para o festival? \n\n", Nome);
     }
     respPrimeiraPergunta = atual.select;
     atual.select = 1;
@@ -700,13 +713,10 @@ void Lot2 (void)
     system("cls");                                                                             //--------------//
     usleep(s);
     usleep(s);
-    usleep(s);
 }
 
 void Lot3 (void)
 {
-    while (1)
-    {
         printf("\n Chegando em casa, voce se depara com Hanne, sua mae, que esta cuidando de uma\n ");
         usleep(s);
         usleep(s);
@@ -724,6 +734,10 @@ void Lot3 (void)
         printf("\n Era Setvik, seu pai.\n\n");
         usleep(s);
         usleep(s);
+
+    while (1)
+    {
+
         printf(" %s Ir ate ele\n", (atual.select == 1) ? "=>" : "  ");
         printf(" %s Ignorar\n", (atual.select == 2) ? "=>" : "  ");
         printf(" %s ...\n", (atual.select == 3) ? "=>" : "  ");
@@ -733,6 +747,17 @@ void Lot3 (void)
         {
             break;
         }
+        printf("\n Chegando em casa, voce se depara com Hanne, sua mae, que esta cuidando de uma\n "
+
+        "pequena plantacao ao lado de sua casa.\n"
+
+        "\n Hanne:\n - Dalia, venha me ajudar!\n"
+
+        "\n E entao voce ouve um grito...\n "
+
+        " %c%s, venha aqui!%c\n"
+
+        "\n Era Setvik, seu pai.\n\n", aspas, Nome, aspas);
     }
     respInt = atual.select;
     atual.select = 1;
@@ -760,8 +785,7 @@ void Lot5 (void)
     usleep(s);
     usleep(s);
     usleep(s);
-    while (1)
-    {
+
         printf("\n Chegando na feira voce percebe que ela esta sendo decorada por varias pessoas.\n");
         usleep(s);
         usleep(s);
@@ -774,10 +798,16 @@ void Lot5 (void)
         printf(" Hotnor e pai de Otskel, amigo de Yurin, seu irmao.  \n");
         usleep(s);
         usleep(s);
+	printf("\n Hotnor:\n - Ola, %s, quer alguma coisa?\n\n", Nome);
+        usleep(s);
+        usleep(s);
 
-        printf("\n Hotnor:\n - Ola, %s, quer alguma coisa?\n\n", Nome);
-        usleep(s);
-        usleep(s);
+
+
+    while (1)
+    {
+
+
         printf(" %s Sim\n", (atual.select == 1) ? "=>" : "  ");
         printf(" %s Nao\n", (atual.select == 2) ? "=>" : "  ");
         printf(" %s ...\n", (atual.select == 3) ? "=>" : "  ");
@@ -787,6 +817,18 @@ void Lot5 (void)
         {
             break;
         }
+
+        printf("\n Chegando na feira voce percebe que ela esta sendo decorada por varias pessoas.\n"
+
+        " Ha enfeites  por todas as partes para preparacao do festival.\n"
+
+        "\n Voce se aproxima de Hotnor, um dos mercadores da feira. \n"
+
+        " Hotnor e pai de Otskel, amigo de Yurin, seu irmao.  \n"
+
+	"\n Hotnor:\n - Ola, %s, quer alguma coisa?\n\n", Nome);
+
+
     }
     fflush(stdin);
     respInt = atual.select;
@@ -845,15 +887,17 @@ void ProcurarSozinho()
         system("cls");
         usleep(s);
         usleep(s);
-        while (1)
-        {
-            printf("\n Os Valkron se afastam na mesma hora pra olhar outra coisa e nem o percebem la. ");
+	printf("\n Os Valkron se afastam na mesma hora pra olhar outra coisa e nem o percebem la. ");
             printf(" Em seguida, Asha o abraca e Pascal iria cumprimenta-lo se nao estivesse sujo de tinta azul e branca.");
             usleep(s);
             usleep(s);
             printf("\n Pascal:\n -  Veio ajudar so pra receber comida depois ne?");
             usleep(s);
             usleep(s);
+
+        while (1)
+        {
+
             printf("\n\n %s Nao, to procurando por Otskel e Yurin, sabe onde estao?\n", (atual.select == 1) ? "=>" : "  ");
             printf(" %s Claro.\n", (atual.select == 2) ? "=>" : "  ");
             printf(" %s Claro.\n", (atual.select == 3) ? "=>" : "  ");
@@ -863,6 +907,10 @@ void ProcurarSozinho()
             {
                 break;
             }
+
+	    printf("\n Os Valkron se afastam na mesma hora pra olhar outra coisa e nem o percebem la. ");
+            printf(" Em seguida, Asha o abraca e Pascal iria cumprimenta-lo se nao estivesse sujo de tinta azul e branca.");
+            printf("\n Pascal:\n -  Veio ajudar so pra receber comida depois ne?");
         }
         fflush(stdin);
         d = atual.select;
@@ -885,9 +933,8 @@ void ProcurarSozinho()
             system("cls");
             usleep(s);
             usleep(s);
-            while (1)
-            {
-                printf("\n\n %s:\n -  Claro, nao e por isso que voce ta aqui tambem?", Nome);
+
+		printf("\n\n %s:\n -  Claro, nao e por isso que voce ta aqui tambem?", Nome);
                 usleep(s);
                 usleep(s);
                 printf("\n\n Pascal soltou uma risada e quase caiu da escada na qual estava suspenso.");
@@ -896,12 +943,22 @@ void ProcurarSozinho()
                 printf("\n\n Asha:\n - Voce viu a Tritska? Ela saiu com o Yurin essa tarde pra o Rio Vermelho,\n mas ainda nao voltou.");
                 usleep(s);
                 usleep(s);
+
+            while (1)
+            {
+
                 printf("\n\n %s Nao.\n", (atual.select == 1) ? "=>" : "  ");
                 Opcoes(1);
                 if(atual.key == ENTER)
                 {
                     break;
                 }
+		printf("\n\n %s:\n -  Claro, nao e por isso que voce ta aqui tambem?"
+
+                "\n\n Pascal soltou uma risada e quase caiu da escada na qual estava suspenso."
+
+                "\n\n Asha:\n - Voce viu a Tritska? Ela saiu com o Yurin essa tarde pra o Rio Vermelho,\n mas ainda nao voltou.", Nome);
+
             }
             usleep(s);
             usleep(s);
@@ -935,7 +992,7 @@ void ProcurarSozinho()
         Lot2();
 
         break;
-    default:
+        default:
         puts("Cc");
 
     }
@@ -1005,8 +1062,6 @@ void RioVermelho()
         while (1)
         {
             printf("\n Yurin:\n - Shh! Vai estragar o plano!\n\n");
-            usleep(s);
-            usleep(s);
             printf(" %s Que Plano?!!\n", (atual.select == 1) ? "=>" : "  ");
             Opcoes(1);
             if(atual.key == ENTER)
@@ -1025,8 +1080,7 @@ void RioVermelho()
             system("cls");
             usleep(s);
             usleep(s);
-            while (1)
-            {
+
                 printf("\n Tritska:\n - Vinganca!\n\n");
                 usleep(s);
                 usleep(s);
@@ -1039,6 +1093,9 @@ void RioVermelho()
                 printf(" Voce sabe disse mais que ninguem. Nao quer nos ajudar?\n");
                 usleep(s);
                 usleep(s);
+
+            while (1)
+            {
                 printf("\n %s Victor Wangeryoran nao me interessa mais. Voces precisam ir pra casa.\n", (atual.select == 1) ? "=>" : "  ");
                 printf(" %s Tudo bem, vou ajudar. O que iremos fazer?\n", (atual.select == 2) ? "=>" : "  ");
 
@@ -1047,6 +1104,12 @@ void RioVermelho()
                 {
                     break;
                 }
+
+                printf("\n Tritska:\n - Vinganca!\n\n"
+                " Otskel:\n - Victor Wangeryoran esta vindo ate aqui. E nos estamos preparados.\n"
+                " Ele implica com todo mundo e deve ter o que merece.\n"
+                " Voce sabe disse mais que ninguem. Nao quer nos ajudar?\n");
+
             }
             respo3 = atual.select;
             atual.select = 1;
@@ -1062,11 +1125,10 @@ void RioVermelho()
         system("cls");
         usleep(s);
         usleep(s);
+
         while (1)
         {
             printf("\n Yurin:\n - Colocando o plano em pratica.\n\n");
-            usleep(s);
-            usleep(s);
             printf(" %s Que Plano?!!\n", (atual.select == 1) ? "=>" : "  ");
             Opcoes(1);
             if(atual.key == ENTER)
@@ -1093,8 +1155,7 @@ void RioVermelho()
             system("cls");
             usleep(s);
             usleep(s);
-            while (1)
-            {
+
                 printf("\n Tritska:\n - Vinganca!\n\n");
                 printf(" Otskel:\n - Victor Wangeryoran esta vindo ate aqui. E nos estamos preparados.\n");
                 usleep(s);
@@ -1105,6 +1166,11 @@ void RioVermelho()
                 printf(" Voce sabe disse mais que ninguem. Nao quer nos ajudar?\n");
                 usleep(s);
                 usleep(s);
+
+            while (1)
+            {
+
+
                 printf("\n %s Victor Wangeryoran nao me interessa mais. Voces precisam ir pra casa.\n", (atual.select == 1) ? "=>" : "  ");
                 printf(" %s Tudo bem, vou ajudar, o que iremos fazer?\n", (atual.select == 2) ? "=>" : "  ");
 
@@ -1113,6 +1179,12 @@ void RioVermelho()
                 {
                     break;
                 }
+
+                printf("\n Tritska:\n - Vinganca!\n\n");
+                printf(" Otskel:\n - Victor Wangeryoran esta vindo ate aqui. E nos estamos preparados.\n");
+                printf(" Ele implica com todo mundo, agora ele vai ter o que merece.\n");
+                printf(" Voce sabe disse mais que ninguem. Nao quer nos ajudar?\n");
+
             }
 
             fflush(stdin);
@@ -1130,14 +1202,17 @@ void RioVermelho()
         system("cls");
         usleep(s);
         usleep(s);
-        while (1)
-        {
+
             printf("\n Yurin:\n - Estamos em um plano de vinganca contra o Victor Wangeryoran.\n Nao quer nem ouvir?\n");
             usleep(s);
             usleep(s);
             printf(" Ele implica com todo mundo, ele tem que pagar por isso.\n");
             usleep(s);
             usleep(s);
+
+        while (1)
+        {
+
             printf("\n %s Nao me interessa, ele e um animal, mas eu nao.\n", (atual.select == 1) ? "=>" : "  ");
             printf(" %s Ta, eu quero. Qual o plano?\n", (atual.select == 2) ? "=>" : "  ");
 
@@ -1146,6 +1221,10 @@ void RioVermelho()
             {
                 break;
             }
+
+            printf("\n Yurin:\n - Estamos em um plano de vinganca contra o Victor Wangeryoran.\n Nao quer nem ouvir?\n");
+            printf(" Ele implica com todo mundo, ele tem que pagar por isso.\n");
+
         }
 
         fflush(stdin);
@@ -1252,8 +1331,6 @@ void RioVermelho()
         usleep(s);
         system("cls");
 
-        while (1)
-        {
             printf("\n Victor estava com Frord e Ikaro, por algum motivo. Os tres andavam juntos\n na escola e nao desgrudavam fora dela.\n Mas Yurin nao achou que ele fosse trazer os dois para la.\n");
             usleep(s);
             usleep(s);
@@ -1262,6 +1339,10 @@ void RioVermelho()
             usleep(s);
             usleep(s);
             usleep(s);
+
+        while (1)
+        {
+
             printf(" %s Banana podre\n", (atual.select == 1) ? "=>" : "  ");
             printf(" %s Mamao molenga\n", (atual.select == 2) ? "=>" : "  ");
             printf(" %s Laranja com larvas\n", (atual.select == 3) ? "=>" : "  ");
@@ -1272,6 +1353,10 @@ void RioVermelho()
             {
                 break;
             }
+
+            printf("\n Victor estava com Frord e Ikaro, por algum motivo. Os tres andavam juntos\n na escola e nao desgrudavam fora dela.\n Mas Yurin nao achou que ele fosse trazer os dois para la.\n");
+            printf("\n Otskel:\n - Muito bem, peguem alguma coisa da sacola.\n\n");
+
         }
 
         while(1)
@@ -1300,8 +1385,7 @@ void RioVermelho()
                 break;
             }
             system("cls");
-            while (1)
-            {
+
                 printf("\n Victor estava com Frord e Ikaro, por algum motivo. Os tres andavam juntos\n na escola e nao desgrudavam fora dela.\n Mas Yurin nao achou que ele fosse trazer os dois para la.\n");
                 usleep(s);
                 usleep(s);
@@ -1310,6 +1394,10 @@ void RioVermelho()
                 usleep(s);
                 usleep(s);
                 usleep(s);
+
+            while (1)
+            {
+
                 printf(" %s Banana podre\n", (atual.select == 1) ? "=>" : "  ");
                 printf(" %s Mamao molenga\n", (atual.select == 2) ? "=>" : "  ");
                 printf(" %s Laranja com larvas\n", (atual.select == 3) ? "=>" : "  ");
@@ -1320,6 +1408,9 @@ void RioVermelho()
                 {
                     break;
                 }
+
+                printf("\n Victor estava com Frord e Ikaro, por algum motivo. Os tres andavam juntos\n na escola e nao desgrudavam fora dela.\n Mas Yurin nao achou que ele fosse trazer os dois para la.\n");
+                printf("\n Otskel:\n - Muito bem, peguem alguma coisa da sacola.\n\n");
             }
             break;
         }
