@@ -621,7 +621,7 @@ char Name(void)
 
         while(1)
         {
-            printf("\n %s eh mesmo o teu nome?\n", Nome);
+            printf("\n %s eh mesmo o teu nome?\n\n", Nome);
             printf(" %s Sim.\n", (atual.select == 1) ? "=>" : "  ");
             printf(" %s Nao.\n", (atual.select == 2) ? "=>" : "  ");
 
